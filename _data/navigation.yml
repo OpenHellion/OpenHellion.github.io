@@ -10,24 +10,26 @@ docs:
         url: /documentation/client-overview
       - title: "Server architecture"
         url: /documentation/server-overview
+      - title: "Debugging features"
+        url: /documentation/debugging-features
   - title: Client deep-dive
     children:
       - title: "Scene descriptions"
-        url: "/documentation/scene-description"
+        url: /documentation/scene-description
       - title: "Subsystems"
-        url: "/documentation/subsystems"
+        url: /documentation/subsystems
       - title: "Loading scenes"
-        url: "/documentation/client-loading"
+        url: /documentation/client-loading
       - title: "GUI overview"
         url: /documentation/ui-overview
   - title: Concepts
     children:
       - title: "Space objects"
-        url: "/documentation/space-objects"
+        url: /documentation/space-objects
+      - title: "Stations"
+        url: /documentation/stations
       - title: "Level design"
         url: /documentation/level-design
-      - title: "Space objects"
-        url: /documentation/space-objects
 
 # Top navigation.
 main:

@@ -6,11 +6,11 @@ title: OpenHellion project documentation
 
 The OpenHellion project documentation aims to explain how the project is put together. This site is for more techical users wanting to get a more general understanding of how the game works.
 
-Parts of the documentation may be outdated. If so, we'd gladly accept a pull request on [github](https://github.com/OpenHellion/OpenHellion.github.io/tree/main/documentation).
+Parts of the documentation may be outdated. If so, we'd gladly accept a pull request on [GitHub](https://github.com/OpenHellion/OpenHellion.github.io/tree/main/documentation).
 
 ## In overview
-The project contains three major parts: the client, the server, and the main server. These three communicate with each other through several layers, a relay, Nakama's internal communcation, and using REST RPCs, as explained in the [Client-server communication](clientserver-overview) article.
+The project contains three major parts: the client, [the server](server-overview), and the main server. These three communicate with each other through several layers, a relay, Nakama's own library/API, and Nakama REST RPCs, as explained in the [Client-server communication](clientserver-overview) article.
 
 ![A diagram of the OpenHellion server-client architecture.](res/ClientArchitecture.drawio.svg)
 
-While the main server and server parts are tasked with more "under the hood" problems, the client is what the players see and use, and is therefore the most important part. This is explained more thoruoughly in the [Client architecture](client-overview) article.
+While the main server and server parts are tasked with more "under the hood" problems, the client is what the players see and use, and is therefore the most important part. This is explained more thoroughly in the [Client architecture](client-overview) article.
