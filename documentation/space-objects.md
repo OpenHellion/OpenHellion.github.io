@@ -7,8 +7,8 @@ Space objects are the object that exist in the world. These are objects that the
 The objects are divided into two main catagories: `SpaceObjectTransferable` and `ArtificalBody`. `Station`, `Asteroid` and `Ship` are interresting as they can exist on the map, which is because they are `SpaceObjectVessel` types.
 
 ## Space object types
-|Type         |Description                                               |Type
-|-------------|----------------------------------------------------------|-------------------------------------------|
+|Type         |Description                                               |Type                   |
+|-------------|----------------------------------------------------------|-----------------------|
 |Player       |Player is a type of space object that represents a player.|SpaceObjectTransferable|
 |DynamicObject|Usually represent physical items. Examples are tools and canisters.|SpaceObjectTransferable|
 |Corpse       |Player corpse. Representation of a player that used to exist.|SpaceObjectTransferable|
