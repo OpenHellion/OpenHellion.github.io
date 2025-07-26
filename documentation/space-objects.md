@@ -8,13 +8,13 @@ The objects are divided into two main catagories: `SpaceObjectTransferable` and 
 
 ## Space object types
 |Type         |Description                                               |Type
-|-------------|----------------------------------------------------------|------
-|Player       |Player is a type of space object that represents a player.|SpaceObjectTransferable
-|DynamicObject|Usually represent physical items. Examples are tools and canisters.|SpaceObjectTransferable
-|Corpse       |Player corpse. Representation of a player that used to exist.|SpaceObjectTransferable
-|Pivot (PlayerPivot, DynamicObjectPivot, CorpsePivot)|A space object that contains another space object. Probably exists to contain the owned object when it moves outside a `Ship` or `Asteroid`.|ArtificalBody
-|Ship         |A representation of a man-made space object. Either a ship or space station.|ArtificalBody (SpaceObjectVessel)
-|Asteroid     |An asteroid in the world. Must not be confused with `CelestialBody`.|ArtificalBody (SpaceObjectVessel)
-|Station      |Unused. Causes confusion with ship, which all space stations are.|ArtificalBody (SpaceObjectVessel)
-|CelestialBody|Unused. Was probably going to reference planets, has no implementation. The class with the same name is found on the sun and every planet, but is not a space object.|None
+|-------------|----------------------------------------------------------|-------------------------------------------|
+|Player       |Player is a type of space object that represents a player.|SpaceObjectTransferable|
+|DynamicObject|Usually represent physical items. Examples are tools and canisters.|SpaceObjectTransferable|
+|Corpse       |Player corpse. Representation of a player that used to exist.|SpaceObjectTransferable|
+|Pivot (PlayerPivot, DynamicObjectPivot, CorpsePivot)|A space object that contains another space object. Probably exists to contain the owned object when it moves outside a `Ship` or `Asteroid`.|ArtificalBody|
+|Ship         |A representation of a man-made space object. Either a ship or space station.|ArtificalBody (SpaceObjectVessel)|
+|Asteroid     |An asteroid in the world. Must not be confused with `CelestialBody`.|ArtificalBody (SpaceObjectVessel)|
+|Station      |Unused. Causes confusion with ship, which all space stations are.|ArtificalBody (SpaceObjectVessel)|
+|CelestialBody|Unused. Was probably going to reference planets, has no implementation. The class with the same name is found on the sun and every planet, but is not a space object.|None|
 
