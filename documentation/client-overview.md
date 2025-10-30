@@ -2,7 +2,7 @@
 title: Client architecture overview
 ---
 
-[The client](https://github.com/OpenHellion/Server) is the part of the project that most players interact with. It contains all of the graphical assets, handles rendering, and serves as an interface to the player.
+[The client](https://github.com/OpenHellion/Client) is the part of the project that most players interact with. It contains all of the graphical assets, handles rendering, and serves as an interface to the player.
 
 As the diagram below shows, intialisation is handled by Initialising Scene. When this is completed, the player is sent over to the Main Menu Scene. This scene then sends the player to the Client scene.
 

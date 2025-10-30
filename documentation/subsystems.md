@@ -10,7 +10,7 @@ The "settings" subsystem handles the underlying code and data required for chang
 
 The "controls" subsystem has the responsibility of keeping track of and storing key bindings as well as keeping track of input. Also has the possibility of making all bindings change at runtime.
 
-"NakamaClient" handles the connections to the Nakama server. The Nakama server is what is also refered to as the main server, and has resposibility for accounts and multiplayer connections. This is further explained on the [client-server communication overview](clientserver-overview.md) page.
+"NakamaClient" handles the connections to the Nakama server. The Nakama server is what is also refered to as the main server, and has resposibility for accounts and multiplayer connections. This is further explained on the [client-server communication overview](clientserver-overview) page.
 
 
 Subsystem     |Starting scene

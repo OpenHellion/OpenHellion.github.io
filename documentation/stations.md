@@ -2,7 +2,7 @@
 title: Stations
 ---
 
-Stations are a type of [space objects](space-objects.md), which contains a collection of [stuctures](client-loading.md). The definitions of stations are stored on the server, and are located in the Data folder. Each file in the Stations folder describes a collection of stations, and are loaded all at once. In essence, stations are blueprints.
+Stations are a type of [space objects](space-objects), which contains a collection of [stuctures](client-loading). The definitions of stations are stored on the server, and are located in the Data folder. Each file in the Stations folder describes a collection of stations, and are loaded all at once. In essence, stations are blueprints.
 
 In the code, stations are categorised as a ``Ship``.
 
