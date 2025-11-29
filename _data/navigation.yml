@@ -1,0 +1,45 @@
+# Documentation sidebar.
+docs:
+  - title: Overview of different systems
+    children:
+      - title: "Documentation Home"
+        url: /documentation/home
+      - title: "Rules and norms"
+        url: /documentation/rules
+      - title: "Client-Server Communication"
+        url: /documentation/clientserver-overview
+      - title: "Client architecture"
+        url: /documentation/client-overview
+      - title: "Server architecture"
+        url: /documentation/server-overview
+      - title: "Debugging features"
+        url: /documentation/debugging-features
+  - title: Client deep-dive
+    children:
+      - title: "Scene descriptions"
+        url: /documentation/scene-description
+      - title: "Subsystems"
+        url: /documentation/subsystems
+      - title: "Loading scenes"
+        url: /documentation/client-loading
+      - title: "GUI overview"
+        url: /documentation/ui-overview
+  - title: Concepts
+    children:
+      - title: "Space objects"
+        url: /documentation/space-objects
+      - title: "Stations"
+        url: /documentation/stations
+      - title: "Level design"
+        url: /documentation/level-design
+      - title: "World space and local space"
+        url: /documentation/world-local-space
+
+# Top navigation.
+main:
+  - title: "Home"
+    url: /
+  - title: "Documentation"
+    url: /documentation/home
+  - title: "About"
+    url: /pages/about

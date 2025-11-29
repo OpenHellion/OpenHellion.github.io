@@ -1,0 +1,41 @@
+title: OpenHellion
+description: OpenHellion website.
+theme: minimal-mistakes-jekyll
+url: https://openhellion.github.io/
+repository: "OpenHellion/openhellion.github.io"
+github_username:  OpenHellion
+
+minimal_mistakes_skin: "dirt"
+
+include: ["pages", "documentation", "_posts" ]
+encoding: "utf-8"
+
+plugins:
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: "documentation"
+    values:
+      toc: true
+      layout: "posts"
+      classes:
+        - wide
+      sidebar:
+        nav: "docs"
+  - scope:
+      path: "pages"
+    values:
+      layout: single
+      classes:
+        - wide
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
