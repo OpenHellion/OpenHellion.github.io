@@ -19,3 +19,6 @@ Asteroid     |An asteroid in the world. Must not be confused with `CelestialBody
 Station      |Unused. Causes confusion with ship, which all space stations are.                                                           |ArtificalBody (SpaceObjectVessel)
 CelestialBody|Unused. Was probably going to reference planets, has no implementation. Exists as a class, but is not a space object.       |None
 
+Visual overview of the class structure on the server. Celestial bodies are not technically space objects as they don't really exist in space (it's not an object you can travel to and interact with).
+
+![](res/SpaceObjects.drawio.svg)

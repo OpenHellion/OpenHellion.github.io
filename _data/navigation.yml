@@ -1,9 +1,13 @@
 # Documentation sidebar.
 docs:
-  - title: Overview of different systems
+  - title: Guides
     children:
       - title: "Documentation Home"
         url: /documentation/home
+      - title: "Installation and setup"
+        url: /documentation/installation-setup
+  - title: Overview of different systems
+    children:
       - title: "Rules and norms"
         url: /documentation/rules
       - title: "Client-Server Communication"
@@ -43,3 +47,5 @@ main:
     url: /documentation/home
   - title: "About"
     url: /pages/about
+  - title: "Source code"
+    url: https://github.com/OpenHellion
