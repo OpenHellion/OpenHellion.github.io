@@ -24,7 +24,7 @@ docs:
         url: /documentation/scene-description
       - title: "Subsystems"
         url: /documentation/subsystems
-      - title: "Loading scenes"
+      - title: "Loading artificial bodies"
         url: /documentation/client-loading
       - title: "GUI overview"
         url: /documentation/ui-overview
@@ -45,7 +45,9 @@ main:
     url: /
   - title: "Documentation"
     url: /documentation/home
+  - title: "GitHub"
+    url: https://github.com/OpenHellion
+  - title: "Discord"
+    url: https://discord.gg/NqhQMfbjxW
   - title: "About"
     url: /pages/about
-  - title: "Source code"
-    url: https://github.com/OpenHellion
