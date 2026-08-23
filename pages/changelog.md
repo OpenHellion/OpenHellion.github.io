@@ -11,9 +11,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - Added main server based on Nakama.
+- Added multiplayer without depending on Steam.
 - Added log in screen.
-- Added accounts stored on main server.
 - Added support for GNU/Linux and MacOS (untested).
+- Added player and ship movement verification.
 
 ### Changed
 
@@ -24,19 +25,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Keep player stabilisation always on.
 - Made game window resizable.
 - Reworked tutorial.
-- Use crunch compression to reduce size and improve loading speed.
-- Disabled volumetric lighting.
+- Use crunch compression to reduce size and improve loading speeds.
+- Split coordinate system into solar system space and local space.
 
 ### Fixed
 
 - Fixed integration with Discord and Steam.
-- Fixed multiplayer not working without Steam.
+- Fixed common desyncs.
 - Fixed countless small bugs.
 
 ### Removed
 
 - Removed singleplayer.
-- Removed some third-party dependencies.
+- Removed proprietary third-party dependencies.
 - Removed server browser.
+- Removed broken volumetric lighting.
 
 Based on Hellion 0.5.2.

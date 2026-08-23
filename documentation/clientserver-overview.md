@@ -2,11 +2,13 @@
 title: Client-server communication overview
 ---
 
-OpenHellion uses Nakama as a main server. The tasks the main server handles are: user accounts, friends, achievements (todo), match handling, chat (todo), character info, parties (todo), and notifications (todo).
+OpenHellion has two types of server, the *main server* and the *game server*.
 
-The components that handles network connectivity are located in the `OpenHellion.Net` namespace on the client and the server. In addition, the client has another namespace called social, which handles communication with Nakama. The server communicates with Nakama through the `MainServerConnection` class, located in the Net namespace.
+The main server handles authenification of players and storing basic character information. Nakama is used as a platform for the main server, and Nakama and main server is used interchangably.
 
-The most important task of the main server is to handle authenification of players and storing basic character information. The server handles the simulation of the world.
+Game servers run a simulation of the world, which means they do most of the heavy lifting. These are what the player connect to when they hit play in the main menu.
+
+The components that handles network connectivity are located in the `OpenHellion.Net` namespace on the client and the server. The `OpenHellion.Social` namespace handles communication with Nakama.
 
 ![A diagram showing how the clients and servers interact with Nakama.](res/ClientServer.drawio.svg)
 

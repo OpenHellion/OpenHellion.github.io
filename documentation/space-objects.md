@@ -21,4 +21,9 @@ CelestialBody|Unused. Was probably going to reference planets, has no implementa
 
 Visual overview of the class structure on the server. Celestial bodies are not technically space objects as they don't really exist in space (it's not an object you can travel to and interact with).
 
-![](res/SpaceObjects.drawio.svg)
+![An overview of how space object classes are structured. A parent SpaceObject has two subclasses; ArtificialBody and SpaceObjectTransferable, which again have subclasses as described in the table above.](res/SpaceObjects.drawio.svg)
+
+
+In the future we wish to distangle these with a new system based on composition, as seen below.
+
+![Map of a simpler structure where ArtificialBodies implement the interface ISpaceObject and transferable objects implement the interface ISpaceObjectTransferable](res/SpaceObjectsNew.drawio.svg)

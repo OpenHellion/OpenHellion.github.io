@@ -17,7 +17,7 @@ When the client receives a response to the `ObjectsSpawnRequest` message, the cl
 When joining a server, the client will receive the guid of the artificial body the player is on. This is done in `PlayerSpawnRequest`. This guid is then used by the client to ask the server for the data required to spawn the object.
 
 ### In the game
-Another way the client loads artificial bodies happens when the player moves close to another artificial body. When `MovementMessage` is received, the client gets a list of all space objects close to the player. When parsing the `MovementMessage`, the client will check if any of the objects do not exist and then spawn them as described under spawning.
+Another way the client loads artificial bodies happens when the player moves close to another artificial body. When `MovementMessage` is received, the client gets a list of all space objects close to the player. When parsing the `MovementMessage`, the client will check if any of the objects do not exist and add them to a spawn queue, calling `ObjectsSpawnRequest`.
 
 ![A diagram showing how movement is processed between the client and the server.](res/Movement.drawio.svg)
 

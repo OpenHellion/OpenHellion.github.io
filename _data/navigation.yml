@@ -38,6 +38,8 @@ docs:
         url: /documentation/level-design
       - title: "World space and local space"
         url: /documentation/world-local-space
+      - title: "Spawn rules"
+        url: /documentation/spawn-rules
 
 # Top navigation.
 main:

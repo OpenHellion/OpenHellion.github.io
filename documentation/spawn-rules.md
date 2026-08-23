@@ -1,0 +1,3 @@
+---
+title: Spawn rules
+---
