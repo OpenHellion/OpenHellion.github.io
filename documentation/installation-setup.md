@@ -27,13 +27,7 @@ git clone https://github.com/OpenHellion/Client
 ## 2. Setup Unity and Wwise
 Download and install [Unity Hub](https://unity.com/) and the [Audiokinetic launcher](https://www.audiokinetic.com/en/wwise/overview/) from their official websites. Download the Unity version described on the [Client git repository](https://github.com/OpenHellion/Client) using Unity Hub. Do not use Unity Hub to open the Client first time as it does not download the correct files required for audio.
 
-Create an Audiokinetic account and apply for a community licence. This is free and done quite easily on [their website](https://www.audiokinetic.com/en/register-project/). Select, gaming, non-commercial and that you need more than 200 assets.
-
-In project description you can write this:
-
-```
-OpenHellion is a mod of Hellion, which is a space survival, exploration and base-building game. It is a free and open-source video project using Unity engine, developed by volunteers. It is not going to be sold, and development reflects its open-source spirit.
-```
+Create an Audiokinetic account and apply for a modding licence on [their website](https://www.audiokinetic.com/en/profile/school/6808/). This is free and you should get your licence within two working days.
 
 Log in on the Audiokinetic launcher, and open the Unity tab. Locate the `Client` install you downloaded on the last step, and after some time it will appear in the list. Then download the Wwise SDK version required by the project in the `Wwise` tab. Open the Wwise project to test if the Wwise is installed.
 
@@ -47,7 +41,7 @@ Open the project in Wwise, set your platform in the dropdown in the upper-left c
 
 ![alt text](res/generate-soundbanks.png)
 
-Finally, open the Unity editor using the Audiokinetic launcher, which will import all of the mandatory files, and will also increase the size of you project dramatically.
+Finally, open the Unity editor using the Audiokinetic launcher. This will take some time depending on the speed of your computer because this step imports all files and builds the project, something that will increase the size of you project dramatically.
 
 ## 3. Setting up servers (works on linux)
 Hellion runs using two types of server: the [main server](clientserver-overview) and the [game server](server-overview). Both of these need to be running to enter the game.
