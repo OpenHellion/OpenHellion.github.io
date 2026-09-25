@@ -43,20 +43,29 @@ Open the project in Wwise, set your platform in the dropdown in the upper-left c
 
 Finally, open the Unity editor using the Audiokinetic launcher. This will take some time depending on the speed of your computer because this step imports all files and builds the project, something that will increase the size of you project dramatically.
 
-## 3. Setting up servers (works on linux)
-Hellion runs using two types of server: the [main server](clientserver-overview) and the [game server](server-overview). Both of these need to be running to enter the game.
-
-### Main server
-Download [Postgresql](https://www.postgresql.org/) and [Nakama](https://heroiclabs.com/nakama/) from their websites. Install Postgresql using its installer.
-
-Download the main server from [https://github.com/OpenHellion/Nakama](https://github.com/OpenHellion/Nakama) using Git and extract the contents of the downloaded nakama binares into the folder of the Nakama server.
-
-### Game server
+## 3. Setting up server (works on linux)
 Download the [latest version of dotnet 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) and install it.
 
 Download the game server from [https://github.com/OpenHellion/Server/](https://github.com/OpenHellion/Server/) using Git.
 
 Run the server using `dotnet run` in the server folder. Dependencies should be installed by itself, which will cause the first compile to be slow.
+
+### Set up main server (optional)
+OpenHellion also supports cases where you may want to host multiple servers at once or want strong authentification. **This is only relevant for those who want to set up public servers.**
+
+Make sure [Node.js](https://nodejs.org/en), [Docker](https://www.docker.com/), and [Docker Compose](https://docs.docker.com/compose/install) are installed.
+
+Download the main server from [https://github.com/OpenHellion/Nakama](https://github.com/OpenHellion/Nakama).
+
+Open the folder and edit `http_key` to a long secret key of your liking. This will be the key that lets servers register with your main server. **Make sure it is not leaked, and change often**.
+
+Run the main server using `node run serve` in the folder you downloaded.
+
+For server owners, open `GameServer.ini`, remove the `offline_mode` setting, and set your `http_key`.
+
+For players, they neeed to remove `offline_mode` from `Preferences.ini`, and configure `main_server_ip` and optionally `main_server_port` to where you are hosting your main server.
+
+You may optionally also set `main_server_key` if you want extra security (this requires setting `socket.server_key` in the main server config).
 
 ## 4. Troubleshooting
 If these steps were followed correctly, OpenHellion should compile fine.
