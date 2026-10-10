@@ -46,7 +46,7 @@ Finally, open the Unity editor using the Audiokinetic launcher. This will take s
 ## 3. Setting up server (works on linux)
 Download the [latest version of dotnet 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) and install it.
 
-Download the game server from [https://github.com/OpenHellion/Server/](https://github.com/OpenHellion/Server/) using Git.
+Download the game server from [https://github.com/OpenHellion/OpenHellion/tree/main/Server](https://github.com/OpenHellion/OpenHellion/tree/main/Server) using Git.
 
 Run the server using `dotnet run` in the server folder. Dependencies should be installed by itself, which will cause the first compile to be slow.
 
